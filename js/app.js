@@ -1,12 +1,12 @@
-const conector = (texto, nuevoSigno) => {
-    const palabra = texto.split(" "); 
-    return palabra.join(`"${nuevoSigno}"`); 
-};
-
 const inputEl = document.getElementById("inputTexto");
 const inputSeparador = document.getElementById("inputSeparador");
 const btnEl = document.getElementById("btnCalcular");
 const resultEl = document.getElementById("resultadoTexto");
+
+const conector = (texto, nuevoSigno) => {
+    const palabra = texto.split(" "); 
+    return palabra.join(`"${nuevoSigno}"`); 
+};
 
 btnEl.addEventListener("click", () => {
     const texto = inputEl.value.trim();
